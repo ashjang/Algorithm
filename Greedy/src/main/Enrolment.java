@@ -1,5 +1,5 @@
-/*
-    Activity Selection Problem: 수강신청
+package main;/*
+    main.Activity Selection Problem: 수강신청
  */
 
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ class Activity {
     }
 }
 
-public class Practice1 {
+public class Enrolment {
     public static void selectActivity(ArrayList<Activity> list) {
         // 종료 시간 기준으로 오름차순
         Collections.sort(list, (x1, x2) -> x1.end - x2. end);

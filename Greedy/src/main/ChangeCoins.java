@@ -1,11 +1,11 @@
-/*
+package main;/*
     거스름돈 문제
  */
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Practice2 {
+public class ChangeCoins {
     public static void getChangeCoins(int receivedMoney, int price) {
         final int[] coins = {500, 100, 50, 10, 5, 1};
 
