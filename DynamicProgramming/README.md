@@ -20,5 +20,7 @@ ex. 피보나치 수열
 ##
 ### main
 - [x] 피보나치
+### practice
+- [x] 최소한의 연산으로 1 만들기
 
 ###### 참고: [https://harimms.tistory.com/265](https://harimms.tistory.com/265)
