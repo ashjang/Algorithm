@@ -14,7 +14,9 @@
 
 ##
 ### main
-- [ ] N-Queen
+- [x] N-Queen
+### practice
+- [ ] 중복없이 수열 만들기
 
 
 ###### 참고: [https://harimms.tistory.com/277](https://harimms.tistory.com/277)
