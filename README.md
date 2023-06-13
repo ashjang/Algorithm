@@ -7,3 +7,6 @@ practicing algorithms
 
 ## - Divide and Conquer
 ###### goto: [https://github.com/ashjang/Algorithm/tree/main/DivideAndConquer](https://github.com/ashjang/Algorithm/tree/main/DivideAndConquer)
+
+## - Dynamic Programming
+###### goto: [https://github.com/ashjang/Algorithm/tree/main/DynamicProgramming](https://github.com/ashjang/Algorithm/tree/main/DynamicProgramming)
