@@ -2,7 +2,7 @@ package practice;
 
 /*
     Practice1
-    정수 n,m이 주어지고 1~n까지의 정수 중에서 중복없이 m개를 고른 수열을 출력
+    정수 n,m이 주어지고 1~n까지의 정수 중에서 중복없이 m개를 고른 순열을 출력
 
     ex)
     n: 3, m:2
@@ -11,7 +11,7 @@ package practice;
 
 /*
     가능 풀이
-
+    순열! DFS!
  */
 
 import java.util.Arrays;
