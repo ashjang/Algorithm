@@ -1,11 +1,10 @@
-package main;
-
-// 다익스트라 우선순위 큐 사용
+package dijkstra;
 
 import java.util.ArrayList;
-import java.util.PriorityQueue;
 
-public class PriorityQueueMain {
+// 효율적이지 않음: 매번 최소간선을 고르기 위해 반복문을 돌리는데 매번 최소간선을 뽑아야하는 것이 번거로움
+
+public class Main {
 
     static class Node {
         int to;
@@ -39,25 +38,27 @@ public class PriorityQueueMain {
         }
         dpList[start] = 0;
 
-        // 간선정보가 작은 것부터 먼저 나옴 => 최소간선에 대해 탐색할 필요가 없음
-        PriorityQueue<Node> pq = new PriorityQueue<>((x,y) -> x.weight - y.weight);
-        pq.offer(new Node(start, 0));
+        // 모든 노드 탐색
+        boolean[] visited = new boolean[v + 1];
+        for (int i = 0; i < v; i++) {
+            int minDist = Integer.MAX_VALUE;        // 다음으로 가장 짧은 간선
+            int curIdx = 0;
 
-        while (!pq.isEmpty()) {
-            Node curNode = pq.poll();
-
-            // 최소경로가 아님
-            if (dpList[curNode.to] < curNode.weight) {
-                continue;
+            // 어떤 노드를 선택? :최소간선
+            for (int j = 1; j < v + 1; j++) {
+                // 방문한적이 없고 거리가 minDist보다 작으면 최소경로로 설정
+                if (!visited[j] && dpList[j] < minDist) {
+                    minDist = dpList[j];
+                    curIdx = j;
+                }
             }
 
-            // 인접 노드를 탐색하며 최단 경로 갱신
-            for (int i = 0; i < graph.get(curNode.to).size(); i++) {
-                Node adjNode = graph.get(curNode.to).get(i);
-
-                if (dpList[adjNode.to] > curNode.weight + adjNode.weight) {
-                    dpList[adjNode.to] = curNode.weight + adjNode.weight;
-                    pq.offer(new Node(adjNode.to, dpList[adjNode.to]));
+            visited[curIdx] = true;
+            // 선택된 노드의 인접노드 weight를 갱신
+            for (int j = 0; j < graph.get(curIdx).size(); j++) {
+                Node adjNode = graph.get(curIdx).get(j);
+                if (dpList[adjNode.to] > dpList[curIdx] + adjNode.weight) {
+                    dpList[adjNode.to] = dpList[curIdx] + adjNode.weight;
                 }
             }
         }
