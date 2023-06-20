@@ -14,6 +14,17 @@
 - [x] 다익스트라 기본 구현(한 노드에서 다른 모든 노드까지의 각 최단 경로)
 - [x] 우선순위큐로 구현
 
+## 2. Bellman-Ford Algorithm
+#### :음수 간선이 있어도 최단 경로 구할 수 있는 알고리즘
+
+### 특징
+- 단, 음수 사이클이 있으면 정상 동작하지 않음!
+- 매번 모든 간선을 확인하기 때문에 다익스트라에 비해 느림
+- 복잡도: O(EV)
+
+####
+### 구현
+- [ ] 
 
 
-###### 참고: https://harimms.tistory.com/279
+###### 참고: [다익스트라](https://harimms.tistory.com/280), [Bellman-Ford](https://harimms.tistory.com/280), 
