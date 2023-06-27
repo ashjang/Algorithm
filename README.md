@@ -16,3 +16,6 @@ practicing algorithms
 
 ## - 최단경로 : Dijkstra, Bellman, Floyd
 ###### goto: https://github.com/ashjang/Algorithm/tree/main/ShortestPath
+
+## - 최소신장트리 : Kruskal, Prim
+###### goto: https://github.com/ashjang/Algorithm/tree/main/Mst
