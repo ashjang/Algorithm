@@ -19,3 +19,6 @@ practicing algorithms
 
 ## - 최소신장트리 : Kruskal, Prim
 ###### goto: https://github.com/ashjang/Algorithm/tree/main/Mst
+
+## - 연습문제
+###### goto: https://github.com/ashjang/Algorithm/tree/main/Practices
